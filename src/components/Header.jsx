@@ -20,7 +20,7 @@ const Header = () => {
       <>
         <div className="header">
             <h1>
-                Sanktuarium Maryjne w Jasnej Górze
+                Sanktuarium Maryjne na Jasnej Górze
             </h1>
         </div>
         <header className='heading' ref={ref}>
