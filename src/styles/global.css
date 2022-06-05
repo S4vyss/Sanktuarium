@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+:root {
+    /* Color palette */
+    --background: #85dcb8;
+    --hover: #41B3A3;
+    --headers: #E27D60;
+    --info: #C38D9E;
+    --icons: #E8A87C;
+}
+
+* {
+    font-family: 'Cabin', 'sans-serif';
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: var(--background);
+}
+
+section {
+    height: 100vh;
+}
+
+ol {
+    list-style: none;
+}

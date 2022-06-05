@@ -1,0 +1,61 @@
+.zrodlo--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.zrodlo--section .header {
+    margin-bottom: 50px;
+}
+
+.zrodla--box {
+    width: 800px;
+}
+
+a h2 {
+    position: relative;
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1.333;
+    transition: .4s ease-out;
+    color: white;
+}
+
+ol li {
+    margin: 130px 0 130px;
+    text-transform: uppercase;
+}
+
+ol li a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    max-width: 300px;
+    position: relative;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+ol li a::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--hover);
+    transform-origin: 0 bottom 0;
+    transform: scaleY(0);
+    transition: .4s ease-out;
+    box-shadow: 5.85px 5.46px 23px 2px var(--hover);
+}
+
+ol li a:hover h2 {
+    color: white;
+}
+
+ol li a:hover::before {
+    transform: scale(1);
+}

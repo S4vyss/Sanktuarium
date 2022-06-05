@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    background: var(--background);
+}
+
+.header {
+    background-color: var(--background);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+ul {
+    position: relative;
+    transform: skewY(-15deg);
+    cursor: pointer;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background: var(--headers);
+    padding: 20px;
+    z-index: var(--i);
+    transition: ease 0.5s;
+}
+
+.heading ul li:hover {
+    background: var(--hover);
+    transform: perspective(1000px) translateZ(50px);
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #c2684f;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: ease 0.5s;
+}
+
+.heading ul li:hover::before {
+    background: #339487;
+}
+
+ul li::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: var(--headers);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: ease 0.5s;
+}
+
+.heading ul li:hover::after {
+    background: var(--hover);
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transition: ease 0.5s;
+}
+
+ul li:last-child::after {
+    box-shadow: -125px 125px 20px rgba(0, 0, 0, .25);
+}
