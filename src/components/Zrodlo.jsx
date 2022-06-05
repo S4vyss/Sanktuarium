@@ -12,17 +12,17 @@ const Zrodlo = () => {
             <article>
                 <ol>
                     <li>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://jasnagora.pl" target="_blank" rel="noopener noreferrer">
                             <h2>Zdjęcia</h2>
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://pl.wikipedia.org/wiki/Jasna_Góra" target="_blank" rel="noopener noreferrer">
                             <h2>Informacje</h2>
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://pl.wikipedia.org/wiki/Jasna_Góra#Historia" target="_blank" rel="noopener noreferrer">
                             <h2>Informacje o Historii</h2>
                         </a>
                     </li>
